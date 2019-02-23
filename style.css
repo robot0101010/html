@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-family: 'Roboto', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+
+.nav {width: 100%;
+	height: 10%;
+	position: fixed;
+	background-color: #282222;
+	line-height: 15px;
+     z-index: 100;
+     text-align: center;
+
+	
+	
+}
+.nav li, s{
+	display: inline-block;
+	margin-left: 2%;
+	padding-bottom: 15px;
+}
+.nav a{
+	color:#FFFFFF;
+	width: 100px;
+text-align: center;
+
+}
+.in1 a{ padding:10px; }
+
+.word_1{
+	color: #BC0303;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding-right: 2%;
+}
+.word_2{
+	color: #FFFFFF;
+	font-size: 1.3em;
+	padding-left:;
+	font-weight: bold;
+}
+.word_2, .word_1 {
+	padding-left: 15px;
+}
+
+
+.img1{
+ 	height: 20px;
+ 	padding-right:14vw;
+ }
+.nav svg{ 
+width: 25px;
+height: 25px;
+ }
+
+ .img1{
+ 	height: 100%;
+ 	margin-right: -15vw;
+ }
+ .svf1{
+ 	width: 25px;
+height: 25px;
+ }
+ .nmber{  font-size: 1.3em;
+ 	color:#FFFFFF;}
+ .nav li a:hover{
+	color:#BC0303;
+
+	border-bottom: 2px solid #C12A2A;
+	padding-bottom: 3px;
+}
+
+
+
+.s svg{padding: 2px;
+	}
+.s svg:hover{
+	
+	transform: scale(0.8);
+}
+ #pull {
+
+    display: none;
+   }
+
+
+/* Стили для видеофона */
+
+#video-bg {
+	position: absolute ;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: -10;
+	background: url(bg/daisy-stock-poster.jpg) no-repeat #94a233;
+	background-size: cover;
+}
+
+#video-bg > video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%; 
+	min-height: 100%%;
+	width: auto;
+	height: 500PX; 
+}
+
+.title_h1 {
+	position: relative;
+	top:10%;
+	z-index: 99;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	padding-top: 20%; 
+	
+}
+.title_h1 h1{
+	color: #FFFFFF;
+	font-size: 3em;
+	font-weight: bold;
+}
+.title_h1 h2{
+	color: #FFFFFF;
+	font-size: 2em;
+	font-weight: bold;
+}
+.title_h1 li{
+	z-index: 100;
+	display: inline-block;
+	padding-top: 4%
+
+}
+.li_1 {
+	z
+	padding-left: 0%;
+	
+	
+
+}
+.li_2{
+	padding-left:  20%;
+}
+.li_1 a{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #D54D4D;
+  border-radius: 15px;
+  width: 200px;
+  color:#FFFFFF;
+}
+.li_2 a{
+	line-height: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background:rgb(100%, 97%, 100%, 0.4); 
+  border:2px solid #FFFFFF;
+  border-radius: 15px;
+  width: 200px;
+  color:#FFFFFF;
+}
+.li_1 a:hover{
+	background: #32A13F;
+	transition: 0.2s;
+}
+.li_2 a:hover{
+	background: #D5CE11;
+	transition: 0.2s;
+}
+
+
+.block_1{
+	 margin-top:240px; width: 100%; height: 500px;background: #FFFFFF;
+}
+.title_service{ 
+	text-align: center;
+	font-size: 1.9em;
+
+ }
+ .title_service svg{ width: 23px;
+ 	height: 23px;
+ 	border-radius: 4px;
+}
+.title_service span{
+	border-bottom: 2px solid #BB2B2B; 
+	padding-top: 20px;
+}
+
+.list_service{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: stretch;
+
+
+
+}
+.list_service li{
+	margin-top: 30px;
+	margin-left:5vw;
+	
+	
+}
+.list_service a { 
+	text-align: center;
+	color:#474141;
+
+}
+
+
+
+
+.list_service img { 
+	width: 25vw;
+	height: 19vw;
+	border-radius: 120px;
+	border: #474141 solid 1.5px;
+	
+}
+.list_service img:hover {
+	border: #996262 solid 1.5px;
+
+	
+
+}
+.list_service li:hover{
+	margin-top: 23px;
+	transition: 0.3s;
+}
+.list_service a:hover{
+	color:#C55555;
+	transition: 0.3s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Проверка на поддержку свойства object-fit: */
+
+ @supports (object-fit: cover) {
+     #video-bg > video {
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+	.nav li, .s svg{
+	display: block;
+	float: center;
+	border: 0px solid #F9C9C9;
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+	background: #282424;
+
+}
+
+
+
+
+
+
+
+
+
